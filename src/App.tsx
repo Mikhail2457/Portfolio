@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Separator } from '@/components/ui/separator';
+import profileImage from '/public/images/profile.jpg';
 
 function App() {
   // Обработчики для кнопок
@@ -61,7 +62,7 @@ function App() {
         <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16">
           <div className="flex-shrink-0">
             <Avatar className="w-48 h-48 md:w-64 md:h-64 border-4 border-primary/20 shadow-2xl">
-              <AvatarImage src="/images/profile.jpg" alt="Михаил Антипов" />
+              <AvatarImage src={profileImage} alt="Михаил Антипов" />
               <AvatarFallback className="text-6xl">МА</AvatarFallback>
             </Avatar>
           </div>
