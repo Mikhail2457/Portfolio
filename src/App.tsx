@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Code, Rocket, ExternalLink } from 'lucide-react';
+import { Mail, Code, Rocket, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -14,14 +14,6 @@ function App() {
 
   const handleViewProjects = () => {
     document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
-  };
-
-  const handleGithub = () => {
-    window.open('https://github.com/mikhailantipov', '_blank');
-  };
-
-  const handleLinkedin = () => {
-    window.open('https://linkedin.com/in/mikhailantipov', '_blank');
   };
 
   const handleEmail = () => {
@@ -94,12 +86,6 @@ function App() {
             </div>
             
             <div className="flex gap-4 mt-8 justify-center md:justify-start">
-              <Button variant="ghost" size="icon" className="rounded-full" onClick={handleGithub}>
-                <Github className="w-5 h-5" />
-              </Button>
-              <Button variant="ghost" size="icon" className="rounded-full" onClick={handleLinkedin}>
-                <Linkedin className="w-5 h-5" />
-              </Button>
               <Button variant="ghost" size="icon" className="rounded-full" onClick={handleEmail}>
                 <Mail className="w-5 h-5" />
               </Button>
